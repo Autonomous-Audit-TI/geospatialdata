@@ -525,7 +525,7 @@ class _CategoryButtonBar extends StatelessWidget {
                       ? Colors.green[700]
                       : Colors.lightGreen),
               child: const Text(
-                'Favorites',
+                'Favoritos',
                 style: TextStyle(color: Colors.white, fontSize: 14.0),
               ),
               onPressed: () => onChanged(PlaceCategory.favorite),
@@ -536,7 +536,7 @@ class _CategoryButtonBar extends StatelessWidget {
                       ? Colors.green[700]
                       : Colors.lightGreen),
               child: const Text(
-                'Visited',
+                'Visitados',
                 style: TextStyle(color: Colors.white, fontSize: 14.0),
               ),
               onPressed: () => onChanged(PlaceCategory.visited),
@@ -547,7 +547,7 @@ class _CategoryButtonBar extends StatelessWidget {
                       ? Colors.green[700]
                       : Colors.lightGreen),
               child: const Text(
-                'Desejo ir',
+                'Agendados',
                 style: TextStyle(color: Colors.white, fontSize: 14.0),
               ),
               onPressed: () => onChanged(PlaceCategory.wantToGo),
@@ -558,7 +558,7 @@ class _CategoryButtonBar extends StatelessWidget {
                       ? Colors.green[700]
                       : Colors.lightGreen),
               child: const Text(
-                'Desejo ir',
+                'Mensagens',
                 style: TextStyle(color: Colors.white, fontSize: 14.0),
               ),
               onPressed: () => onChanged(PlaceCategory.wantToGo),
@@ -584,38 +584,38 @@ class NavDrawer extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             child: Text(
-              'Passeios em Jeri!!',
-              style: TextStyle(color: Colors.white, fontSize: 25),
+              '', //Escolha seu passeio...
+              style: TextStyle(color: Colors.black87, fontSize: 20),
             ),
             decoration: BoxDecoration(
                 color: Colors.green,
                 image: DecorationImage(
                     fit: BoxFit.fill,
-                    image: AssetImage('assets/cover.jpg'))),
+                    image: AssetImage('../assets/cover.jpg'))),
           ),
           ListTile(
             leading: Icon(Icons.input),
-            title: Text('Welcome'),
+            title: Text('Passeios'),
             onTap: () => {},
           ),
           ListTile(
             leading: Icon(Icons.verified_user),
-            title: Text('Profile'),
+            title: Text('Segurança'),
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
             leading: Icon(Icons.settings),
-            title: Text('Settings'),
+            title: Text('Configurações'),
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
             leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
+            title: Text('Avaliar'),
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),
-            title: Text('Logout'),
+            title: Text('Sair'),
             onTap: () => {Navigator.of(context).pop()},
           ),
         ],

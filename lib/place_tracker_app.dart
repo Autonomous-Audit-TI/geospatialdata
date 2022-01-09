@@ -83,7 +83,7 @@ class _PlaceTrackerHomePage extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
               child: Icon(Icons.pin_drop, size: 24.0),
             ),
-            Text('Mapa de rotas'),
+            Text('Passeios de Jeep em Jeriquaquara'),
           ],
         ),
         backgroundColor: Colors.green[700],

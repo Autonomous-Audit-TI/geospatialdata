@@ -80,13 +80,13 @@ class _CategoryButton extends StatelessWidget {
     late String _buttonText;
     switch (category) {
       case PlaceCategory.favorite:
-        _buttonText = 'Favorites';
+        _buttonText = 'Favoritos';
         break;
       case PlaceCategory.visited:
-        _buttonText = 'Visited';
+        _buttonText = 'Visitado';
         break;
       case PlaceCategory.wantToGo:
-        _buttonText = 'Want To Go';
+        _buttonText = 'Desejo ir';
     }
 
     return Container(

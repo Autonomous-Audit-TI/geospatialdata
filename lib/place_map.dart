@@ -107,6 +107,7 @@ class PlaceMapState extends State<PlaceMap> {
             ),
 
             NavDrawer(),
+       
 
             _AddPlaceButtonBar(
               visible: _pendingMarker != null,

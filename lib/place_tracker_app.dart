@@ -35,7 +35,7 @@ class _ZoomInOutMapsState extends State<ZoomInOutMaps> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Zoom in and Out of Google Maps'),
+          title: Text('Sistema de aproximação Google'),
           backgroundColor: Colors.red,
         ),
         body: GoogleMap(
@@ -82,15 +82,18 @@ class _PlaceTrackerHomePage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
               child: Icon(Icons.pin_drop, size: 24.0),
+       
             ),
-            Text('Passeios de Jeep em Jeriquaquara'),
+            Text('Passeios de Jeep em Jericoaquara'),
           ],
+          
         ),
         backgroundColor: Colors.green[700],
+        elevation: 1,
         actions: [
           Padding(
             padding: const EdgeInsets.fromLTRB(0.0, 0.0, 16.0, 0.0),
-            child: IconButton(
+            child: (IconButton(
               icon: Icon(
                 state.viewType == PlaceTrackerViewType.map
                     ? Icons.list
@@ -104,10 +107,16 @@ class _PlaceTrackerHomePage extends StatelessWidget {
                       : PlaceTrackerViewType.map,
                 );
               },
-            ),
+            )),
+
+          
+
           ),
         ],
+
+        
       ),
+      
       body: IndexedStack(
         index: state.viewType == PlaceTrackerViewType.map ? 0 : 1,
         children: const [
